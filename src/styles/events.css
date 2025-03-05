@@ -1,0 +1,161 @@
+.events-container {
+  max-width: 940px;
+  margin: 80px auto 20px;
+  padding: 0 15px;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.events-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.create-event-button {
+  padding: 8px 16px;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.events-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.events-filter {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #dddfe2;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.events-filter.active {
+  background-color: #e7f3ff;
+  color: #1877f2;
+  border-color: #1877f2;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 15px;
+}
+
+.event-date {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e7f3ff;
+  color: #1877f2;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.event-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #050505;
+}
+
+.event-details {
+  margin-bottom: 15px;
+}
+
+.event-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+  color: #65676b;
+  font-size: 14px;
+}
+
+.event-detail-icon {
+  width: 16px;
+  color: #65676b;
+}
+
+.event-attendees {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.event-attendee {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -8px;
+  object-fit: cover;
+}
+
+.event-attendees-count {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #65676b;
+}
+
+.event-rsvp {
+  width: 100%;
+  padding: 8px 0;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.event-rsvp.going {
+  background-color: #45bd62;
+}
+
+.event-rsvp.interested {
+  background-color: #f7b928;
+}
+
+@media (max-width: 768px) {
+  .events-container {
+    margin-top: 70px;
+  }
+  
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
